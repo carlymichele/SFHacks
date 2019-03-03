@@ -1,0 +1,6 @@
+framework module Pods_VirtualGraffiti {
+  umbrella header "Pods-VirtualGraffiti-umbrella.h"
+
+  export *
+  module * { export * }
+}
