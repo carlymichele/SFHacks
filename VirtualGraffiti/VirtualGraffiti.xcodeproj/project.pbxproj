@@ -13,9 +13,12 @@
 		B31FE939222C0F6A004E5EF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31FE937222C0F6A004E5EF6 /* Main.storyboard */; };
 		B31FE93B222C0F6B004E5EF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31FE93A222C0F6B004E5EF6 /* Assets.xcassets */; };
 		B31FE93E222C0F6B004E5EF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B31FE93C222C0F6B004E5EF6 /* LaunchScreen.storyboard */; };
+		FEDD5CCEFF23F401E58D4B99 /* Pods_VirtualGraffiti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0591438E2BEF6EBF50B9D72 /* Pods_VirtualGraffiti.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B12DE8B059E34D3C71C4A93 /* Pods-VirtualGraffiti.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualGraffiti.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VirtualGraffiti/Pods-VirtualGraffiti.debug.xcconfig"; sourceTree = "<group>"; };
+		A0591438E2BEF6EBF50B9D72 /* Pods_VirtualGraffiti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VirtualGraffiti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31FE92E222C0F6A004E5EF6 /* VirtualGraffiti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualGraffiti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B31FE931222C0F6A004E5EF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B31FE933222C0F6A004E5EF6 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		B31FE93A222C0F6B004E5EF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B31FE93D222C0F6B004E5EF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B31FE93F222C0F6B004E5EF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7962A5190B7CD0BE4D50B78 /* Pods-VirtualGraffiti.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualGraffiti.release.xcconfig"; path = "Pods/Target Support Files/Pods-VirtualGraffiti/Pods-VirtualGraffiti.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEDD5CCEFF23F401E58D4B99 /* Pods_VirtualGraffiti.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0653F7AC4C2A80B09CD27E90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B12DE8B059E34D3C71C4A93 /* Pods-VirtualGraffiti.debug.xcconfig */,
+				E7962A5190B7CD0BE4D50B78 /* Pods-VirtualGraffiti.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8411F60DBC56A564B06A6A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0591438E2BEF6EBF50B9D72 /* Pods_VirtualGraffiti.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B31FE925222C0F6A004E5EF6 = {
 			isa = PBXGroup;
 			children = (
 				B31FE930222C0F6A004E5EF6 /* VirtualGraffiti */,
 				B31FE92F222C0F6A004E5EF6 /* Products */,
+				0653F7AC4C2A80B09CD27E90 /* Pods */,
+				8411F60DBC56A564B06A6A17 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B31FE942222C0F6B004E5EF6 /* Build configuration list for PBXNativeTarget "VirtualGraffiti" */;
 			buildPhases = (
+				FD1BE5446C0E37B6FC4E1B90 /* [CP] Check Pods Manifest.lock */,
 				B31FE92A222C0F6A004E5EF6 /* Sources */,
 				B31FE92B222C0F6A004E5EF6 /* Frameworks */,
 				B31FE92C222C0F6A004E5EF6 /* Resources */,
+				D9FA838C4F52A829D5EBC098 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +159,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D9FA838C4F52A829D5EBC098 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VirtualGraffiti/Pods-VirtualGraffiti-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LBTAComponents/LBTAComponents.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LBTAComponents.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VirtualGraffiti/Pods-VirtualGraffiti-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD1BE5446C0E37B6FC4E1B90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VirtualGraffiti-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B31FE92A222C0F6A004E5EF6 /* Sources */ = {
@@ -284,6 +349,7 @@
 		};
 		B31FE943222C0F6B004E5EF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B12DE8B059E34D3C71C4A93 /* Pods-VirtualGraffiti.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +368,7 @@
 		};
 		B31FE944222C0F6B004E5EF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7962A5190B7CD0BE4D50B78 /* Pods-VirtualGraffiti.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
